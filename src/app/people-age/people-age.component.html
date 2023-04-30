@@ -1,0 +1,6 @@
+<div class="get_age">
+  <label for="person-name">Enter person name:</label>
+  <input id="person-name" type="text" [(ngModel)]="personName">
+  <button (click)="getAge()">Get age</button>
+  <p *ngIf="responseData">{{ responseData }}</p>
+</div>
